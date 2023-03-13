@@ -12,6 +12,7 @@
             justify-content: center;
             align-items: center;
             background-image: url('Bilder/Strandaidrettspark.png');
+            /* Jeg har søkt og spørt på f.ks Reddit om hvordan jeg skal gjøre disse tinga. Du har sagt vi må søke opp spørsmål. */
             background-size: cover;
             height: 200px;
         }
@@ -95,7 +96,7 @@
             color: var(--primary-color);
             font-family: Arial, sans-serif;
             font-size: 16px;
-            zoom: 300%;
+            zoom: 80%;
             /* Zoom inn nettsiden til 80% */
         }
 
@@ -111,24 +112,72 @@
         .contact-section {
             border: 5px solid var(--tertiary-color);
         }
+
+         /* Meny stil*/
+        .menu {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        .menu li {
+            margin: 0 10px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: bold;
+            font-size: 1.2em;
+            transition: all 0.3s ease-out;
+        }
+
+        .menu a:hover {
+            color: #fff;
+            background-color: var(--primary-color);
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
     </style>
 </head>
 
 <body>
+         <div class="menu">   <!-- div for menyen -->
+        <ul>
+            <li><a href="#photos">Photos</a></li>
+            <li><a href="#videos">Videos</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
     <!-- Banner -->
-    <div class="banner">
+    <div class="banner"> <!-- div for menyen -->
         <!-- Skulle skrive noe her, men jeg glømte hva. -->
     </div>
 
     <!-- Bildesamling -->
+    <div class="image-gallery" id="photos">
+        
+    </div>
     <div class="image-gallery">
         <img src="Bilder/Fast.JPG" alt="Bilde 1">
         <img src="Bilder/Strong.JPG" alt="Bilde 2">
         <img src="Bilder/TwoHands.JPG" alt="Bilde 3">
-        <img src="Bilder/Leon.JPG" alt="Bilde 4">    <!-- Jeg glemte å ta bilde av meg som brukte den maskinen, så derfor Er det venenn min Leon på bildet. "Jeg spørte om tilatelse". -->
+        <img src="Bilder/Leon.JPG" alt="Bilde 4">
+        <!-- Jeg glemte å ta bilde av meg som brukte den maskinen, så derfor Er det venenn min Leon på bildet. "Jeg spørte om tilatelse". -->
     </div>
 
     <!-- Video seksjon -->
+    <div class="video-section" id="videos"> <!-- div for menyen -->
+        
+    </div>
     <div class="video-section">
         <iframe src="https://www.youtube.com/embed/bndEWU4a6tE" title="MVI 3045"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -140,7 +189,7 @@
 
 
     <!-- Kontaktdel -->
-    <div class="contact-section">
+    <div class="contact-section" id="contact"> <!-- div for menyen -->
         <h3>Kontaktinformasjon</h3>
         <p>Adresse: 1772 Halden</p>
         <p>Telefon: +47 69 17 45 00</p>
